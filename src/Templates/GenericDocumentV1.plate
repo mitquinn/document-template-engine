@@ -1,0 +1,7 @@
+<html>
+<body>
+<br>First Name:<?=$this->e($firstName)?>
+<br>Last Name:<?=$this->e($lastName)?>
+<br>Age:<?=$this->e($age)?>
+</body>
+</html>

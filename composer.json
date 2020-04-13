@@ -1,0 +1,37 @@
+{
+    "name": "kapitus/document-template-engine",
+    "description": "This is a composer package that handles the templating of documents.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mitchell Quinn",
+            "email": "mquinn@kapitus.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kapitus\\DocumentTemplateEngine\\": "src/"
+        }
+    },
+    "require": {
+        "ext-gd": "*",
+        "league/plates": "^3.3",
+        "mpdf/mpdf": "^8.0",
+        "monolog/monolog": "^1.25",
+        "ramsey/uuid": "^3.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}

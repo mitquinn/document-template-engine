@@ -1,0 +1,10 @@
+image: lorisleiva/laravel-docker
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - composer
+        script:
+          - composer install
+          - vendor/bin/phpunit
